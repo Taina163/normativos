@@ -1,0 +1,18 @@
+name: normativos
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - pip
+  - jupyter=1.*
+  - scikit-learn=1.*
+  - scipy
+  - pandas=2.*
+  - numpy
+  - beautifulsoup4
+  - matplotlib=3.*
+  - dash=2.*
+  - nltk
+  - plotly=5.*
+  - conda-forge::pillow=10.1.*
+  - tqdm
