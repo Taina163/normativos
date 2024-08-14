@@ -16,3 +16,5 @@ dependencies:
   - plotly=5.*
   - conda-forge::pillow=10.1.*
   - tqdm
+pip:
+  - jupyter-c-kernel
