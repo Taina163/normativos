@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #004b6f; /* Azul escuro para o fundo da página */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Faz a altura ocupar a tela inteira */
+}
+
+.logo-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.logo {
+    width: 90px; /* Tamanho da logo */
+    height: 90px;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px; /* Define a largura máxima do formulário */
+    text-align: center; /* Centraliza o conteúdo do formulário */
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #007bff; /* Azul para o título */
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column; /* Alinha os itens verticalmente */
+    align-items: center; /* Centraliza os itens */
+}
+
+.form-fields {
+    width: 100%; /* Faz com que os campos ocupem a largura total do container */
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px; /* Reduz o tamanho da fonte dos labels */
+    text-align: left; /* Alinha o texto do label à esquerda */
+}
+
+input[type="text"] {
+    width: 100%; /* Largura total dos inputs dentro do form-group */
+    max-width: 400px; /* Define a largura máxima dos inputs */
+    padding: 12px; /* Aumenta o padding dos inputs */
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    background-color: #f1f8ff; /* Azul claro para o fundo dos inputs */
+    font-size: 16px; /* Ajusta o tamanho da fonte dos inputs */
+}
+
+button {
+    padding: 12px 24px; /* Ajusta o padding do botão */
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px; /* Ajusta o tamanho da fonte do botão */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
