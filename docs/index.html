@@ -1,14 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Olá mundo!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pesquisa Avançada UFSM</title>
 </head>
 <body>
-
-	<h1>Olá mundo!</h1>
-
-	<p>Sou uma página bem basicona.</p>
+    <div class="logo-container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSKXDVo-XKlkR3oIE2AOB3ReEz2y_KskI0oQ&s" alt="Logo" class="logo">
+    </div>
+    <div class="container">
+        <h1>Pesquisa Avançada</h1>
+        <form onsubmit="search(event)">
+            <div class="form-content">
+                <div class="form-fields">
+                    <div class="form-group">
+                        <label for="allWords">Todas estas palavras:</label>
+                        <input type="text" id="allWords" placeholder="Palavras que devem estar inclusas">
+                    </div>
+                    <div class="form-group">
+                        <label for="exactPhrase">Esta expressão ou frase exata:</label>
+                        <input type="text" id="exactPhrase" placeholder="Frase exata">
+                    </div>
+                    <div class="form-group">
+                        <label for="anyWords">Qualquer uma destas palavras:</label>
+                        <input type="text" id="anyWords" placeholder="Palavras opcionais">
+                    </div>
+                    <div class="form-group">
+                        <label for="noneWords">Nenhuma destas palavras:</label>
+                        <input type="text" id="noneWords" placeholder="Palavras para excluir">
+                    </div>
+                    <button type="submit">Buscar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
